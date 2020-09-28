@@ -1,18 +1,13 @@
-helloSpeaker = {}
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-for (var i = 0; i < names.length; i++) 
-{
-    var firstLetter = names[i].charAt(0).toLowerCase();
-    if (firstLetter === 'j') 
-    {
-        //byeSpeaker.speak(names[i]);
-        console.log("GoodBye "+names[i]);
-        document.write("GoodBye "+names[i]+"<br>");
-    }
-    else
-    {
-        //helloSpeaker.speak(names[i]);
-        console.log("Hello"+names[i]);
-        document.write("Hello"+names[i]+"<br>");
-    }
-}
+
+   (function () {
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+            byeSpeaker.speak(names[i]);
+          } else {
+            helloSpeaker.speak(names[i]);
+          }
+        }
+})(); 
+
